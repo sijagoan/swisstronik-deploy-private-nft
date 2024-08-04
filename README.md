@@ -1,4 +1,4 @@
-# Swisstronik Testnet 2.0 // Deploy Private NFT.
+# Swisstronik Testnet 2.0 (Deploy Private NFT).
 
 Link : [Click!](https://www.swisstronik.com/testnet2/dashboard)
 
@@ -7,7 +7,7 @@ Link : [Click!](https://www.swisstronik.com/testnet2/dashboard)
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/ragilzy/swisstronik-deploy-private-nft.git
+git clone https://github.com/sijagoan/swisstronik-deploy-private-nft.git
 ```
 ```bash
 cd swisstronik-deploy-private-nft
@@ -51,7 +51,7 @@ contract PrivateNFT is ERC721, Ownable {
     event NFTMinted(address recipient, uint256 tokenId);
     event NFTBurned(uint256 tokenId);
 
-    constructor(address initialOwner) ERC721("UniswapPRVT", "UNIPRVT") Ownable(initialOwner) {}
+    constructor(address initialOwner) ERC721("DogsPrivate", "DOGS") Ownable(initialOwner) {}
 
     function mintNFT(address recipient) public onlyOwner returns (uint256) {
         _currentTokenId += 1;
@@ -97,6 +97,4 @@ npm run mint
 
 ### Finished.
 
-Github  : [ragilzy](https://github.com/ragilzy)
-
-Swisstronik Address Testnet 0xBD686f99674d8c96597f9B70a2e27EfF3c8BEF74
+Address Testnet 0xE07E1B83d974E90EE489D2aFa227B676D2a43B3F
